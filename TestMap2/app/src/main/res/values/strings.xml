@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TestMap2</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiYWNkaXhvbjkxIiwiYSI6ImNrMHJuaDlnaDA2NzIzbGw2Njc3eTIwcnEifQ.53uPla_hHD7D7GM2J3Ldgg</string>
+    <string name="radio_name">Radio Test Button</string>
+</resources>
