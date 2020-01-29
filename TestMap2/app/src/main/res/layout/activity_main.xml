@@ -7,31 +7,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.mapbox.mapboxsdk.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        mapbox:mapbox_cameraTargetLat="-32.557013"
-        mapbox:mapbox_cameraTargetLng="-56.149056"
-        mapbox:mapbox_cameraZoom="5.526846" />
-
     <com.sothree.slidinguppanel.SlidingUpPanelLayout
         android:id="@+id/activity_main"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="bottom"
         tools:context=".MainActivity"
         app:umanoPanelHeight="70dp"
         app:umanoShadowHeight="5dp">
-
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <com.mapbox.mapboxsdk.maps.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                mapbox:mapbox_cameraTargetLat="-32.557013"
+                mapbox:mapbox_cameraTargetLng="-56.149056"
+                mapbox:mapbox_cameraZoom="5.526846" />
         </FrameLayout>
-
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <include layout="@layout/lower_slider_bar" />
         </FrameLayout>
 
