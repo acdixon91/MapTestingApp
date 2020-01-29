@@ -37,6 +37,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:8.3.0'
     implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.sothree.slidinguppanel:library:3.4.0'
 
     //nav
     def nav_version = "2.1.0"
