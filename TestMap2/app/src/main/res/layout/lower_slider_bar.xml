@@ -4,39 +4,137 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF"
     >
-    <ImageView
-        android:src="@drawable/wolf"
-        android:layout_centerInParent="true"
+
+    <View
         android:layout_width="match_parent"
-        android:scaleType="centerCrop"
-        android:clickable="false"
-        android:layout_height="match_parent" />
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp" />
 
-    <Button
-        android:id="@+id/button"
+    <View
         android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/round_button"
-        android:text="Incident"
-        android:textColor="#FFFFFF"
-        android:textSize="10sp" />
+        android:layout_height="2dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="7dp"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_alignParentEnd="true"
-        android:background="@drawable/round_button"
-        android:text="Crew"
-        android:textColor="#FFFFFF"
-        android:textSize="10sp" />
-
-    <Button
-        android:id="@+id/button3"
+    <TextView
+        android:id="@+id/incident_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:text="Button" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text='"Incident and Fire Name Here"' />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/incident_information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text='"Incident Information"' />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:gravity="center">
+        <Button
+            android:id="@+id/resources"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-75dp"
+            android:layout_weight="80"
+            android:text="Resources" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:gravity="center">
+        <Button
+            android:id="@+id/maps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="80"
+            android:text="Maps" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:gravity="center">
+        <Button
+            android:id="@+id/command_structure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="75dp"
+            android:layout_weight="80"
+            android:text="Command Structure" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:gravity="center">
+        <Button
+            android:id="@+id/iap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:layout_weight="80"
+            android:text="Incident Action Plan (IAP)" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:gravity="center">
+        <Button
+            android:id="@+id/weather"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="225dp"
+            android:layout_weight="80"
+            android:text="Weather" />
+    </LinearLayout>
+
 </RelativeLayout>
